@@ -8,6 +8,9 @@
 
 class NovelDemoPipeline(object):
     def process_item(self, item, spider):
-        for i in range(1, len(item["nov_chapter"])):
-            print(item["nov_chapter"][i])
+
+        print(item["nov_name"])
+        print("-------------")
+
+
         return item
